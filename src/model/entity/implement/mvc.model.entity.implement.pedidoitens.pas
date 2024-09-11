@@ -17,50 +17,50 @@ type
     FValorTotal: Currency;
   public
     class function New: iPedidoItens;
-    function setId(const Value: Integer): iPedidoItens;
-    function getId: Integer;
-    function setNumeroPedido(const Value: Integer): iPedidoItens;
-    function getNumeroPedido: Integer;
-    function setCodigoProduto(const Value: Integer): iPedidoItens;
-    function getCodigoProduto: Integer;
-    function setQuantidade(const Value: Double): iPedidoItens;
-    function getQuantidade: Double;
-    function setValorUnitario(const Value: Currency): iPedidoItens;
-    function getValorUnitario: Currency;
-    function setValorTotal(const Value: Currency): iPedidoItens;
-    function getValorTotal: Currency;
+    function SetId(const Value: Integer): iPedidoItens;
+    function GetId: Integer;
+    function SetNumeroPedido(const Value: Integer): iPedidoItens;
+    function GetNumeroPedido: Integer;
+    function SetCodigoProduto(const Value: Integer): iPedidoItens;
+    function GetCodigoProduto: Integer;
+    function SetQuantidade(const Value: Double): iPedidoItens;
+    function GetQuantidade: Double;
+    function SetValorUnitario(const Value: Currency): iPedidoItens;
+    function GetValorUnitario: Currency;
+    function SetValorTotal(const Value: Currency): iPedidoItens;
+    function GetValorTotal: Currency;
   end;
 
 implementation
 
 { TPedidoItens }
 
-function TPedidoItens.getCodigoProduto: Integer;
+function TPedidoItens.GetCodigoProduto: Integer;
 begin
   Result := FCodigoProduto;
 end;
 
-function TPedidoItens.getId: Integer;
+function TPedidoItens.GetId: Integer;
 begin
   Result := FId;
 end;
 
-function TPedidoItens.getNumeroPedido: Integer;
+function TPedidoItens.GetNumeroPedido: Integer;
 begin
   Result := FNumeroPedido;
 end;
 
-function TPedidoItens.getQuantidade: Double;
+function TPedidoItens.GetQuantidade: Double;
 begin
   Result := FQuantidade;
 end;
 
-function TPedidoItens.getValorTotal: Currency;
+function TPedidoItens.GetValorTotal: Currency;
 begin
   Result := FValorTotal;
 end;
 
-function TPedidoItens.getValorUnitario: Currency;
+function TPedidoItens.GetValorUnitario: Currency;
 begin
   Result := FValorUnitario;
 end;
@@ -70,37 +70,37 @@ begin
   Result := Self.Create;
 end;
 
-function TPedidoItens.setCodigoProduto(const Value: Integer): iPedidoItens;
+function TPedidoItens.SetCodigoProduto(const Value: Integer): iPedidoItens;
 begin
   Result := Self;
   FCodigoProduto := Value;
 end;
 
-function TPedidoItens.setId(const Value: Integer): iPedidoItens;
+function TPedidoItens.SetId(const Value: Integer): iPedidoItens;
 begin
   Result := Self;
   FId := Value;
 end;
 
-function TPedidoItens.setNumeroPedido(const Value: Integer): iPedidoItens;
+function TPedidoItens.SetNumeroPedido(const Value: Integer): iPedidoItens;
 begin
   Result := Self;
   FNumeroPedido := Value;
 end;
 
-function TPedidoItens.setQuantidade(const Value: Double): iPedidoItens;
+function TPedidoItens.SetQuantidade(const Value: Double): iPedidoItens;
 begin
   Result := Self;
   FQuantidade := Value;
 end;
 
-function TPedidoItens.setValorTotal(const Value: Currency): iPedidoItens;
+function TPedidoItens.SetValorTotal(const Value: Currency): iPedidoItens;
 begin
   Result := Self;
   FValorTotal := Value;
 end;
 
-function TPedidoItens.setValorUnitario(const Value: Currency): iPedidoItens;
+function TPedidoItens.SetValorUnitario(const Value: Currency): iPedidoItens;
 begin
   Result := Self;
   FValorUnitario := Value;

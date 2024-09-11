@@ -108,6 +108,10 @@
         <DCCReference Include="model\entity\implement\mvc.model.entity.implement.pedidos.pas"/>
         <DCCReference Include="model\entity\implement\mvc.model.entity.implement.pedidoitens.pas"/>
         <DCCReference Include="model\entity\implement\mvc.model.entity.implement.entity.pas"/>
+        <DCCReference Include="model\connection\mvc.model.connection.interfaces.pas"/>
+        <DCCReference Include="model\connection\implement\mvc.model.connection.implement.firedac.pas"/>
+        <DCCReference Include="model\connection\implement\mvc.model.connection.implement.query.pas"/>
+        <DCCReference Include="model\connection\implement\mvc.model.connection.implement.configuration.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

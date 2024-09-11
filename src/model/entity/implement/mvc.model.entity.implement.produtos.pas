@@ -14,12 +14,12 @@ type
     FPrecoVenda: Currency;
   public
     class function New: iProdutos;
-    function setCodigo(const Value: Integer): iProdutos;
-    function getCodigo: Integer;
-    function setDescricao(const Value: String): iProdutos;
-    function getDescricao: String;
-    function setPrecoVenda(const Value: Currency): iProdutos;
-    function getPrecoVenda: Currency;
+    function SetCodigo(const Value: Integer): iProdutos;
+    function GetCodigo: Integer;
+    function SetDescricao(const Value: String): iProdutos;
+    function GetDescricao: String;
+    function SetPrecoVenda(const Value: Currency): iProdutos;
+    function GetPrecoVenda: Currency;
   end;
 
 
@@ -27,17 +27,17 @@ implementation
 
 { TProduto }
 
-function TProdutos.getCodigo: Integer;
+function TProdutos.GetCodigo: Integer;
 begin
   Result := FCodigo;
 end;
 
-function TProdutos.getDescricao: String;
+function TProdutos.GetDescricao: String;
 begin
   Result := FDescricao;
 end;
 
-function TProdutos.getPrecoVenda: Currency;
+function TProdutos.GetPrecoVenda: Currency;
 begin
   Result := FPrecoVenda;
 end;
@@ -47,19 +47,19 @@ begin
   Result := Self.Create;
 end;
 
-function TProdutos.setCodigo(const Value: Integer): iProdutos;
+function TProdutos.SetCodigo(const Value: Integer): iProdutos;
 begin
   Result := Self;
   FCodigo := Value;
 end;
 
-function TProdutos.setDescricao(const Value: String): iProdutos;
+function TProdutos.SetDescricao(const Value: String): iProdutos;
 begin
   Result := Self;
   FDescricao := Value;
 end;
 
-function TProdutos.setPrecoVenda(const Value: Currency): iProdutos;
+function TProdutos.SetPrecoVenda(const Value: Currency): iProdutos;
 begin
   Result := Self;
   FPrecoVenda := Value;

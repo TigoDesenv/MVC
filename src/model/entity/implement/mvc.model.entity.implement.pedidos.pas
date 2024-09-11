@@ -15,36 +15,36 @@ type
     FValorTotal: Currency;
   public
     class function New: iPedidos;
-    function setNumeroPedido(const Value: Integer): iPedidos;
-    function getNumeroPedido: Integer;
-    function setDateEmissao(Value: TDateTime): iPedidos;
-    function getDataEmissao: TDateTime;
-    function setCodigoCliente(const Value: Integer): iPedidos;
-    function getCodigoCliente: Integer;
-    function setValorTotal(const Value: Currency): iPedidos;
-    function getValorTotal: Currency;
+    function SetNumeroPedido(const Value: Integer): iPedidos;
+    function GetNumeroPedido: Integer;
+    function SetDateEmissao(Value: TDateTime): iPedidos;
+    function GetDataEmissao: TDateTime;
+    function SetCodigoCliente(const Value: Integer): iPedidos;
+    function GetCodigoCliente: Integer;
+    function SetValorTotal(const Value: Currency): iPedidos;
+    function GetValorTotal: Currency;
   end;
 
 implementation
 
 { TPedido }
 
-function TPedidos.getCodigoCliente: Integer;
+function TPedidos.GetCodigoCliente: Integer;
 begin
   Result := FCodigoCliente;
 end;
 
-function TPedidos.getDataEmissao: TDateTime;
+function TPedidos.GetDataEmissao: TDateTime;
 begin
   Result := FDataEmissao;
 end;
 
-function TPedidos.getNumeroPedido: Integer;
+function TPedidos.GetNumeroPedido: Integer;
 begin
   Result := FNumeroPedido;
 end;
 
-function TPedidos.getValorTotal: Currency;
+function TPedidos.GetValorTotal: Currency;
 begin
   Result := FValorTotal;
 end;
@@ -54,25 +54,25 @@ begin
   Result := Self.Create;
 end;
 
-function TPedidos.setCodigoCliente(const Value: Integer): iPedidos;
+function TPedidos.SetCodigoCliente(const Value: Integer): iPedidos;
 begin
   Result := Self;
   FCodigoCliente := Value;
 end;
 
-function TPedidos.setDateEmissao(Value: TDateTime): iPedidos;
+function TPedidos.SetDateEmissao(Value: TDateTime): iPedidos;
 begin
   Result := Self;
   FDataEmissao := Value;
 end;
 
-function TPedidos.setNumeroPedido(const Value: Integer): iPedidos;
+function TPedidos.SetNumeroPedido(const Value: Integer): iPedidos;
 begin
   Result := Self;
   FNumeroPedido := Value;
 end;
 
-function TPedidos.setValorTotal(const Value: Currency): iPedidos;
+function TPedidos.SetValorTotal(const Value: Currency): iPedidos;
 begin
   Result := Self;
   FValorTotal := Value;

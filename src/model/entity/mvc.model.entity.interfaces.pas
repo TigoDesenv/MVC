@@ -40,18 +40,18 @@ type
 
   iPedidoItens = Interface
     ['{5599FB19-4DD6-4262-A783-F3257938F593}']
-    function setId(const Value: Integer): iPedidoItens;
-    function getId: Integer;
-    function setNumeroPedido(const Value: Integer): iPedidoItens;
-    function getNumeroPedido: Integer;
-    function setCodigoProduto(const Value: Integer): iPedidoItens;
-    function getCodigoProduto: Integer;
-    function setQuantidade(const Value: Double): iPedidoItens;
-    function getQuantidade: Double;
-    function setValorUnitario(const Value: Currency): iPedidoItens;
-    function getValorUnitario: Currency;
-    function setValorTotal(const Value: Currency): iPedidoItens;
-    function getValorTotal: Currency;
+    function SetId(const Value: Integer): iPedidoItens;
+    function GetId: Integer;
+    function SetNumeroPedido(const Value: Integer): iPedidoItens;
+    function GetNumeroPedido: Integer;
+    function SetCodigoProduto(const Value: Integer): iPedidoItens;
+    function GetCodigoProduto: Integer;
+    function SetQuantidade(const Value: Double): iPedidoItens;
+    function GetQuantidade: Double;
+    function SetValorUnitario(const Value: Currency): iPedidoItens;
+    function GetValorUnitario: Currency;
+    function SetValorTotal(const Value: Currency): iPedidoItens;
+    function GetValorTotal: Currency;
   End;
 
   iEntity = Interface

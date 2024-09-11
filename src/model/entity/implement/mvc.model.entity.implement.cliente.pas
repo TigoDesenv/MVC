@@ -15,36 +15,36 @@ type
     FEstado: String;
   public
     class function New: iCliente;
-    function setCodigo(const Value: Integer): iCliente;
-    function getCodigo: Integer;
-    function setNome(const Value: String): iCliente;
-    function getNome: String;
-    function setCidade(const Value: String): iCliente;
-    function getCidade: String;
-    function setEstado(const Value: String): iCliente;
-    function getEstado: String;
+    function SetCodigo(const Value: Integer): iCliente;
+    function GetCodigo: Integer;
+    function SetNome(const Value: String): iCliente;
+    function GetNome: String;
+    function SetCidade(const Value: String): iCliente;
+    function GetCidade: String;
+    function SetEstado(const Value: String): iCliente;
+    function GetEstado: String;
   end;
 
 implementation
 
 { TCliente }
 
-function TCliente.getCidade: String;
+function TCliente.GetCidade: String;
 begin
   Result := FCidade;
 end;
 
-function TCliente.getCodigo: Integer;
+function TCliente.GetCodigo: Integer;
 begin
   Result := FCodigo;
 end;
 
-function TCliente.getEstado: String;
+function TCliente.GetEstado: String;
 begin
   Result := FEstado;
 end;
 
-function TCliente.getNome: String;
+function TCliente.GetNome: String;
 begin
   Result := FNome;
 end;
@@ -54,25 +54,25 @@ begin
   Result := Self.Create;
 end;
 
-function TCliente.setCidade(const Value: String): iCliente;
+function TCliente.SetCidade(const Value: String): iCliente;
 begin
   Result := Self;
   FCidade := value;
 end;
 
-function TCliente.setCodigo(const Value: Integer): iCliente;
+function TCliente.SetCodigo(const Value: Integer): iCliente;
 begin
   Result := Self;
   FCodigo := Value;
 end;
 
-function TCliente.setEstado(const Value: String): iCliente;
+function TCliente.SetEstado(const Value: String): iCliente;
 begin
   Result := Self;
   FEstado := Value;
 end;
 
-function TCliente.setNome(const Value: String): iCliente;
+function TCliente.SetNome(const Value: String): iCliente;
 begin
   Result := Self;
   FNome := Value;
